@@ -1,0 +1,133 @@
+/*全屏容器*/
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.all {
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+}
+.top {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    background: url("../images/header-bg.png") repeat-x 0 0 / 1px 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.top a {
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+    /*a标签从content位置开始切图*/
+    background-clip: content-box;
+    /*a标签从content位置开始定位背景图*/
+    background-origin: content-box;
+}
+.top .icon_back {
+    left: 0;
+    background-position: -20px 0;
+}
+.top .icon_menu {
+    right: 0;
+    background-position: -60px 0;
+}
+.top form {
+    width: 100%;
+    padding: 0 40px;
+}
+.top form input {
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 5px;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    /*不会出现滚动条*/
+    overflow: hidden;
+}
+.left {
+    width: 90px;
+    height: 100%;
+    float: left;
+}
+.left ul {
+    width: 100%;
+}
+.left ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #f3f3f3;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.left ul li.now {
+    background: #fff;
+    border-right: none;
+}
+.left ul li a {
+    color: #666;
+    display: block;
+}
+.left ul li.now a {
+    color: #d8505c;
+}
+.right {
+    overflow: hidden;
+    height: 100%;
+}
+.right_box {
+    padding: 0 10px;
+    width: 100%;
+}
+.right_box .banner {
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+}
+.right_box .banner img {
+    display: block;
+    width: 100%;
+}
+.right_box .hot {
+    margin-top: 10px;
+}
+.right_box .hot h3 {
+    font-size: 12px;
+}
+.right_box .hot ul {
+    width: 100%;
+}
+.right_box .hot ul li {
+    width: 33.33%;
+    float: left;
+}
+.right_box .hot ul li a {
+    width: 100%;
+    display: block;
+}
+.right_box .hot ul li a img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+.right_box .hot ul li a p {
+    text-align: center;
+    color: #666;
+    padding: 5px 0;
+}

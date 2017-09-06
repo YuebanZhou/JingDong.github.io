@@ -1,0 +1,110 @@
+/*reset*/
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*兼容*/
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #333;
+}
+input,textarea {
+    border: none;
+    outline: none;
+    /*不允许拉伸*/
+    resize: none;
+    /*移动端特有的输入框的默认阴影效果*/
+    -webkit-appearance: none;
+}
+/*common*/
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+.clearfix::before,.clearfix::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+.m_l10 {
+    margin-left: 10px;
+}
+.m_r10 {
+    margin-right: 10px;
+}
+.m_t10 {
+    margin-top: 10px;
+}
+.m_b10 {
+    margin-bottom: 10px;
+}
+.p_l10 {
+    padding-left: 10px;
+}
+.p_b10 {
+    padding-bottom: 10px;
+}
+.p_r10 {
+    padding-right: 10px;
+}
+.p_10 {
+    padding: 10px;
+}
+[class^="icon_"],[class*=" icon_"] {
+    background-image: url("../images/sprites.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+.w_50 {
+    display: block;
+    width: 50%;
+}
+.w_50 img {
+    display: block;
+    width: 100%;
+}
+.bl {
+    border-left: 1px solid #ddd;
+}
+.br {
+    border-right: 1px solid #ddd;
+}
+.bb {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
